@@ -13,6 +13,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
+    // 开启模块热替换
     hot: true
   },
   module: {
@@ -36,4 +37,5 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: "/"
   },
+  mode: "production"
 };
